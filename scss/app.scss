@@ -1,0 +1,119 @@
+// ./scss/app.scss
+/*
+    FICHIER DE SURCHARGE
+ */
+// Importations des variables du framework dans le fichier de surcharge
+  @import 'framework/variables.scss';
+
+/* ---------------------------------------------------
+   SPECIFICATIONS GENERALES - Valeurs par défaut
+   ---------------------------------------------------
+*/
+
+header {
+  position: sticky;
+  border-bottom: 1px grey solid;
+  margin-bottom: 50px;
+  ul {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    li {
+      border: 1px solid #707070;
+      padding: 10px 50px 10px 50px;
+      list-style: none;
+      &:hover {
+        background: #505050;
+        a {
+          color: #fff;
+        }
+      }
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+section {
+  border: 1px solid grey;
+  padding: 50px;
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+/* ---------------------------------------------------
+   CLASSES PARTICULIERES
+   ---------------------------------------------------
+*/
+
+.red {background: red;}
+.blue {background: blue;}
+.green {background: green;}
+.grey {background: grey;}
+.yellow {background: yellow;}
+.cyan {background: cyan;}
+.orange {background: orange;}
+.black {background: black;}
+.magenta {background: magenta;}
+.olive {background: olive;}
+.purple {background: purple;}
+.brown {background: brown;}
+
+/* ---------------------------------------------------
+   OBJETS PARTICULIERS
+   ---------------------------------------------------
+*/
+
+#menu {
+  div {
+    padding: 30px;
+    border: 1px solid grey;
+  }
+   #menu-vertical {
+     height: 500px;
+   }
+}
+
+#utilitaires {
+  #display-none > ul {
+    padding: 0;
+    width: 100%;
+    li {
+      list-style: none;
+      div {
+        width: 200px;
+        padding: 20px;
+        text-align: center;
+        background: darkgreen;
+        color:#eee;
+      }
+    }
+  }
+  #display-only > div {
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    background: red;
+    color:#eee;
+  }
+}
+
+#grille {
+  div {
+    padding: 20px;
+    text-align: center;
+    color:#eee;
+  }
+}
+
+#texte {
+  div {
+    padding: 30px;
+    border: 1px solid grey;
+  }
+}
